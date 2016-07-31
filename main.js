@@ -1,27 +1,19 @@
 /*
 =======================================================
-
 ** Week 2 - Project 2 **
 *** Looping & Conditionals ***
-
 Below are a number of problems for you to solve
 using JS. The JS code can be written below each
 problem and the result can be logged to the console.
-
 In order to make the results easy to read,
 please use console.log("Question #") to declare the
 problem number being solved followed by console.log(yourAnswer) after each question.
-
 For any methods that we didn't cover, please refer to the Loops and Iteration Documentation.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
-
 or If...Else Documentation
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-
 or While Loop Documentation
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
-
-
 BASIC TRACK: 1-15
 ADVANCED TRACK: 16-20
 =======================================================
@@ -30,13 +22,23 @@ ADVANCED TRACK: 16-20
 
 // 1. Output each item in the following Array to your console:
 var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
+console.log(livingRoom)
 
 // 2. Using a loop, log numbers 22-33 in the console.
-
+for(i=22 ;i<=33; i++ ){
+  console.log(i);
+}
 // 3. Using a similar loop, log numbers 75 to 100, only in increments of five.
-
+for(i=75 ;i<=100; i+=5 ){
+  console.log(i);
+}
 // 4. Write a while loop that logs "This is how a professional loops." to the console 5 times.
-
+var msg ="This is how a professional loops.";
+while( msg <= 5){
+   msg += msg;
+  counter++;
+}
+console.log(msg)
 // 5. Separately, use both a for loop and while loop to do the same thing.
 //     Print out the sentence "At home, I have _____ cats."
 //     The numbers should range from 10 to 110, in increments of 25.
@@ -45,6 +47,17 @@ var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
 //    number is even and greater than 10, and 'Odd' if the number is odd.
 //    HINT: Google 'remainder operator'
 var numArray = [2, 17, 9, 24, 8];
+for(i=0 ;i<numArray.length;i++){ 
+   if ((numArray[i]%2===0) &&(numArray[i]>10)){ 
+      console.log("number is :"+ numArray[i] + "even and grater than 10");
+      }
+   else if ((numArray[i]%2===0) &&(numArray[i]>10)){ 
+      console.log("number is :"+ numArray[i] +"even");
+   }
+  else {
+     console.log("number is: " + numbArray[i] + "odd");
+  }
+}
 
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
 var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
